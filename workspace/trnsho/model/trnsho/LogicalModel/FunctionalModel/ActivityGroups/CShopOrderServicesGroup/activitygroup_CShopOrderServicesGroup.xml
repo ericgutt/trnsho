@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ACTIVITY_PACKAGE_DEFINITION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifsrecord="urn:ifsworld-com:ifsrecord" xmlns="urn:ifsworld-com:schemas:repositoryadministration_activity_package_definition" ifsrecord:state="queried">
+<PACKAGE_ID ifsrecord:datatype="Alpha">16217871-cd56-11e2-2de1-d80656a3aac5</PACKAGE_ID>
+<NAME ifsrecord:datatype="Alpha">CShopOrderServicesGroup</NAME>
+<MODULE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<LOCKED_BY ifsrecord:datatype="Text" xsi:nil="1"/>
+<IS_SERVICE ifsrecord:datatype="Boolean">1</IS_SERVICE>
+<DIAGRAMS ifsrecord:datatype="Array">
+<ACTIVITY_PACKAGE_DIAGRAM ifsrecord:state="queried">
+<PACKAGE_ID ifsrecord:datatype="Alpha">16217871-cd56-11e2-2de1-d80656a3aac5</PACKAGE_ID>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+<NAME ifsrecord:datatype="Text">Main</NAME>
+<DATA ifsrecord:datatype="Binary" xsi:nil="1"/>
+</ACTIVITY_PACKAGE_DIAGRAM>
+</DIAGRAMS>
+</ACTIVITY_PACKAGE_DEFINITION>

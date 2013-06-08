@@ -1,0 +1,197 @@
+<project name="Build trnsho application" default="all" basedir=".">
+  <!-- Script to build an Application (.ear) file for a list of packages. -->
+
+
+  <!--
+     ==================================
+            Initialize Properties      
+     ==================================
+  -->
+  <!-- Workspace-->
+  <property name="ws.name"             value="trnsho"/>
+  <property name="ws.name.short"       value="trnsho"/>
+
+  <!-- Dev Root -->
+  <property name="dev.root"            value="../../"/>
+
+  <!-- Root properties -->
+  <property file="${dev.root}../../../../../build.properties"/>
+  <property file="${dev.root}../../../../build.properties"/>
+  <property name="development"         value="TRUE"/>
+  <!-- Setting that controls whether to use parallel tasks in the build process -->
+  <property name="useparalleltasks"    value="TRUE"/>
+
+  <!-- Local Settings -->
+  <property name="modules.root"        location="${dev.root}../../../../"/>
+  <property name="server-home"         value="${modules.root}/../server"/>
+  <property name="distribution"        value="${server-home}/dist"/>
+  <property name="javaruntime"         value="${server-home}/javaruntime"/>
+  <property name="ws.build"            value="${server-home}/classes/packages"/>
+  <property name="ws.enum"             value="${server-home}/classes/enumerations"/>
+  <property name="ws.dist"             value="${distribution}"/>
+  <property name="dist.temp.app"       value="${ws.dist}/components/${ws.name}"/>
+  <property name="dist.mappings"       value="${ws.dist}/mappings"/>
+  <property name="j2ee.deploy"         value="${distribution}"/>
+
+  <!-- Project Settings -->
+  <!-- property name="project.modules.root"  value=""/-->
+  <property name="project.dist"              value="${project.modules.root}/../server/dist"/>
+  <property name="project.javaruntime"       value="${project.modules.root}/../server/javaruntime"/>
+  <property name="project.dist.mappings"     value="${project.dist}/mappings"/>
+
+  <!-- IFS Server Framework Jars  -->
+  <property name="fnd.sf.jar"          value="${javaruntime}/ifs-fnd-j2ee.jar"/>
+  <property name="fnd.common.jar"      value="${javaruntime}/ifs-fnd-common.jar"/>
+
+  <!-- IFS Mobility Framework Jars  -->
+  <property name="fnd.mob.jar"         value="${javaruntime}/fndmob.jar"/>
+
+  <!-- J2EE Server Jar  -->
+  <property name="j2ee.jar"            value="${javaruntime}/jboss-j2ee.jar"/>
+
+  <condition property="release" value="TRUE"><equals arg1="${development}" arg2="FALSE"/></condition>
+
+  <taskdef name="IfsImport" classname="ifs.fnd.buildtasks.IfsImportTask" classpath="${javaruntime}/ifs-fnd-buildtasks.jar"/>
+
+
+  <!--
+     ==================================
+           Initialize Dependencies     
+     ==================================
+  -->
+  <!-- Required modules -->
+  <condition property="optionalpath" value="trnsho/source/optional"><equals arg1="${development}" arg2="TRUE"/></condition>
+  <condition property="optionalpath" value="optional"><equals arg1="${development}" arg2="FALSE"/></condition>
+  <condition property="trnshopath" value="trnsho/source/trnsho"><equals arg1="${development}" arg2="TRUE"/></condition>
+  <condition property="trnshopath" value="trnsho"><equals arg1="${development}" arg2="FALSE"/></condition>
+
+  <!-- Class path & Source path -->
+  <path id="sources"/>
+  <path id="classpath">
+    <pathelement location="${fnd.sf.jar}"/>
+    <pathelement location="${fnd.common.jar}"/>
+    <pathelement location="${j2ee.jar}"/>
+  </path>
+
+
+
+  <!--
+     ==================================
+        Import common task templates   
+     ==================================
+  -->
+
+  <!-- fndbas path -->
+  <condition property="fndbaspath" value="fndbas/source/fndbas"><equals arg1="${development}" arg2="TRUE"/></condition>
+  <condition property="fndbaspath" value="fndbas"><equals arg1="${development}" arg2="FALSE"/></condition>
+  <!-- default template path -->
+  <condition property="defcommontemplate" value="${modules.root}/${fndbaspath}/build-multitask-template.xml"><equals arg1="${useparalleltasks}" arg2="TRUE"/></condition>
+  <condition property="defcommontemplate" value="${modules.root}/${fndbaspath}/build-nomultitask-template.xml"><equals arg1="${useparalleltasks}" arg2="FALSE"/></condition>
+  <!-- secondary template path -->
+  <condition property="seccommontemplate" value="${server-home}/build-multitask-template.xml"><equals arg1="${useparalleltasks}" arg2="TRUE"/></condition>
+  <condition property="seccommontemplate" value="${server-home}/build-nomultitask-template.xml"><equals arg1="${useparalleltasks}" arg2="FALSE"/></condition>
+  <!-- import common template -->
+  <IfsImport Description="CommonTemplateGroup">
+    <FileSet file="${defcommontemplate}"/>
+    <FileSet file="${seccommontemplate}"/>
+  </IfsImport>
+
+  <!-- Import Required Packages -->
+  <echo message="*** Importing required packages (${ws.name}) ... ***" level="info"/>
+
+  <IfsImport Description="CShopOrderServicesGroup">
+    <FileSet file="${modules.root}/${trnshopath}/server/packages/CShopOrderServicesGroup/build.xml"/>
+    <FileSet file="${ws.dist}/ant/build-CShopOrderServicesGroup.xml"/>
+    <FileSet file="${modules.root}/${optionalpath}/trnsho/server/packages/CShopOrderServicesGroup/build.xml"/>
+  </IfsImport>
+
+  <IfsImport Description="CPartCatalogServiceGroup">
+    <FileSet file="${modules.root}/${trnshopath}/server/packages/CPartCatalogServiceGroup/build.xml"/>
+    <FileSet file="${ws.dist}/ant/build-CPartCatalogServiceGroup.xml"/>
+    <FileSet file="${modules.root}/${optionalpath}/trnsho/server/packages/CPartCatalogServiceGroup/build.xml"/>
+  </IfsImport>
+
+
+
+  <!--
+     ==================================
+              Compile & Package        
+     ==================================
+  -->
+
+  <!-- All -->
+  <target name="all" depends="template.all"/>
+
+  <!-- Init -->
+  <target name="init" depends="template.init"/>
+
+
+  <!-- Compile -->
+  <target name="compile" depends="template.compile"/>
+
+  <!-- Compile with debug-->
+  <target name="compile-with-debug" depends="template.compile-with-debug"/>
+
+  <!-- Compile without debug-->
+  <target name="compile-no-debug" depends="template.compile-no-debug"/>
+
+  <!-- Compile dependent enumerations-->
+  <target name="compile-enum" depends="template.compile-enum"/>
+
+  <!-- Package dependent enumerations-->
+  <target name="pack-enum" depends="template.pack-enum"/>
+
+  <!-- Update application support bean -->
+  <target name="update-standard-entity" depends="template.update-standard-entity"/>
+
+  <!-- Update client gateway -->
+  <target name="update-gateway">
+    <delete file="application-config.xml"/>
+    <concat destfile="application-config.xml">&lt;application_config&gt;&lt;name&gt;applicationname&lt;/name&gt;&lt;beans&gt;</concat>
+    <replace file="application-config.xml" token="applicationname" value="${ws.name.short}"/>
+    <concat destfile="application-config.xml" append="true">
+      <fileset dir="${dist.mappings}" includes="CShopOrderServicesGroup-mappings.xml"/>
+      <fileset dir="${dist.mappings}" includes="CPartCatalogServiceGroup-mappings.xml"/>
+      <fileset dir="${dist.mappings}" includes="ApplicationSupport-mappings.xml"/>
+    </concat>
+    <concat destfile="application-config.xml" append="true">&lt;/beans&gt;&lt;/application_config&gt;</concat>
+    <delete dir="gateway" quiet="true"/>
+    <mkdir dir="gateway/src"/>
+    <copy file="${javaruntime}/ifsclientgateway.war" todir="gateway"/>
+    <unzip src="gateway/ifsclientgateway.war" dest="gateway/src"/>
+    <copy file="application-config.xml" todir="gateway/src/WEB-INF" preservelastmodified="true"/>
+    <updatedescriptors languages="${ifs.languages}" appowner="${ifs.appowner}" sslsupport="${ifs.enable-ssl-support}"
+              ejbinfo="ifs.application.cshoporderservicesgroup:CShopOrderServicesGroup,ifs.application.cpartcatalogservicegroup:CPartCatalogServiceGroup,ifs.application.applicationsupport:ApplicationSupport">
+       <fileset dir="gateway/src/WEB-INF" includes="*.xml"/>
+    </updatedescriptors>
+    <replace dir="gateway/src/WEB-INF" includes="*.xml" token="_appname_" value="trnsho"/>
+    <jar jarfile="gateway/ifsclientgateway.war" update="yes">
+       <fileset dir="gateway/src/" includes="**"/>
+    </jar>
+    <copy file="application-config.xml" tofile="${ws.dist}/redirect-config/${ws.name.short}-application-config.xml"/>
+    <delete file="application-config.xml"/>
+  </target>
+
+  <!-- Update fndext.ear with the system configuration file for all built modules -->
+  <target name="update-fndext" depends="template.update-fndext"/>
+
+  <!-- Pack packages -->
+  <target name="pack-packages" depends="template.pack-packages"/>
+
+  <!-- Pack module -->
+  <target name="pack-module" depends="template.pack-module"/>
+
+  <!-- Copy xml files -->
+  <target name="copy-files-to-dist" depends="template.copy-files-to-dist"/>
+
+  <target name="deploy" depends="template.deploy"/>
+
+  <target name="clean" depends="template.clean"/>
+
+  <target name="clean-build" depends="template.clean-build"/>
+
+  <target name="build" depends="template.build"/>
+
+  <target name="refresh-package-list">
+     <touch file="nbproject/project.xml"/>  </target>
+</project>

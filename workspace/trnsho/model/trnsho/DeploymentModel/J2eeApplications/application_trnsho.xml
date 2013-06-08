@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<J2EE_APPLICATION_DEFINITION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifsrecord="urn:ifsworld-com:ifsrecord" xmlns="urn:ifsworld-com:schemas:repositoryadministration_j2ee_application_definition" ifsrecord:state="queried">
+<NAME ifsrecord:datatype="Alpha">trnsho</NAME>
+<DISPLAY_NAME ifsrecord:datatype="Text">trnsho</DISPLAY_NAME>
+<MODULE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DEVELOPMENT_APPLICATION ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<MODULES ifsrecord:datatype="Array">
+<J2EE_MODULE_DEFINITION ifsrecord:state="queried">
+<NAME ifsrecord:datatype="Alpha">trnsho</NAME>
+<PACKAGE_ID ifsrecord:datatype="Alpha">37be0de9-cd56-11e2-2de1-d80656a3aac5</PACKAGE_ID>
+<PACKAGE_DEFINITION ifsrecord:datatype="Aggregate">
+<SERVER_PACKAGE_DESCRIPTION ifsrecord:state="queried">
+<PACKAGE_ID ifsrecord:datatype="Alpha">37be0de9-cd56-11e2-2de1-d80656a3aac5</PACKAGE_ID>
+<NAME ifsrecord:datatype="Alpha">CShopOrderServicesGroup</NAME>
+<PACKAGE_TYPE ifsrecord:datatype="Enum">SERVICE_PACKAGE</PACKAGE_TYPE>
+</SERVER_PACKAGE_DESCRIPTION>
+</PACKAGE_DEFINITION>
+</J2EE_MODULE_DEFINITION>
+<J2EE_MODULE_DEFINITION ifsrecord:state="queried">
+<NAME ifsrecord:datatype="Alpha">trnsho</NAME>
+<PACKAGE_ID ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PACKAGE_ID>
+<PACKAGE_DEFINITION ifsrecord:datatype="Aggregate">
+<SERVER_PACKAGE_DESCRIPTION ifsrecord:state="queried">
+<PACKAGE_ID ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PACKAGE_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalogServiceGroup</NAME>
+<PACKAGE_TYPE ifsrecord:datatype="Enum">SERVICE_PACKAGE</PACKAGE_TYPE>
+</SERVER_PACKAGE_DESCRIPTION>
+</PACKAGE_DEFINITION>
+</J2EE_MODULE_DEFINITION>
+</MODULES>
+</J2EE_APPLICATION_DEFINITION>

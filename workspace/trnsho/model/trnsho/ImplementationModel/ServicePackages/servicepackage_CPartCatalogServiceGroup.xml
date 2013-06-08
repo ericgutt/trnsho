@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SERVER_PACKAGE_DEFINITION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifsrecord="urn:ifsworld-com:ifsrecord" xmlns="urn:ifsworld-com:schemas:repositoryadministration_server_package_definition" ifsrecord:state="queried">
+<PACKAGE_ID ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PACKAGE_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalogServiceGroup</NAME>
+<PARENT_PACKAGE ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<PACKAGE_TYPE ifsrecord:datatype="Enum">SERVICE_PACKAGE</PACKAGE_TYPE>
+<LOCKED_BY ifsrecord:datatype="Text" xsi:nil="1"/>
+<JAVA_PACKAGE_NAME ifsrecord:datatype="Text" xsi:nil="1"/>
+<MODULE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<HANDLERS ifsrecord:datatype="Array">
+<HANDLER_DEFINITION ifsrecord:state="queried">
+<HANDLER_ID ifsrecord:datatype="Alpha">843e8e61-ceb9-11e2-06e4-efb559464aa7</HANDLER_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalogPlsqlAPI</NAME>
+<TYPE ifsrecord:datatype="Enum">IMPLEMENTATION_HANDLER</TYPE>
+<PARENT_PACKAGE ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PARENT_PACKAGE>
+<ACTIVITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<METHODS ifsrecord:datatype="Array">
+<HANDLER_METHOD_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">97d6e211-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<HANDLER_ID ifsrecord:datatype="Alpha">843e8e61-ceb9-11e2-06e4-efb559464aa7</HANDLER_ID>
+<IMPLEMENTATION ifsrecord:datatype="Enum">PLSQL</IMPLEMENTATION>
+<PLSQL_METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</PLSQL_METHOD_ID>
+<RETURN_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<RETURN_VIEW_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ENTITY_OP_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<TRANSACTIONAL_BEHAVIOR ifsrecord:datatype="Enum">REQUIRES_NEW</TRANSACTIONAL_BEHAVIOR>
+<RETURNS_ARRAY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<NAME ifsrecord:datatype="Alpha">CreatePartCatalog</NAME>
+<RETURN_STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<BIZ_API_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<BIZ_API_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<PLSQL_BLOCK ifsrecord:datatype="Text" xsi:nil="1"/>
+<METHOD_PARAMETERS ifsrecord:datatype="Array">
+<METHOD_PARAMETER_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">97d6e211-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">Description</NAME>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<VIEW_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<PLSQL_METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</PLSQL_METHOD_ID>
+<PLSQL_PARAMETER_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ABSOLUTE_VALUE ifsrecord:datatype="Text" xsi:nil="1"/>
+<IS_ARRAY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<VALIDATION_OBJECT_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+</METHOD_PARAMETER_DEFINITION>
+<METHOD_PARAMETER_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">97d6e211-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">PartNo</NAME>
+<ORDINAL ifsrecord:datatype="Integer">0</ORDINAL>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<VIEW_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<PLSQL_METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</PLSQL_METHOD_ID>
+<PLSQL_PARAMETER_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ABSOLUTE_VALUE ifsrecord:datatype="Text" xsi:nil="1"/>
+<IS_ARRAY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<VALIDATION_OBJECT_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+</METHOD_PARAMETER_DEFINITION>
+<METHOD_PARAMETER_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">97d6e211-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">UnitCode</NAME>
+<ORDINAL ifsrecord:datatype="Integer">2</ORDINAL>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<VIEW_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<PLSQL_METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</PLSQL_METHOD_ID>
+<PLSQL_PARAMETER_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ABSOLUTE_VALUE ifsrecord:datatype="Text" xsi:nil="1"/>
+<IS_ARRAY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<VALIDATION_OBJECT_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+</METHOD_PARAMETER_DEFINITION>
+<METHOD_PARAMETER_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">97d6e211-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">description_</NAME>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<VIEW_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<PLSQL_METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</PLSQL_METHOD_ID>
+<PLSQL_PARAMETER_ID ifsrecord:datatype="Alpha">7550affd-ceb9-11e2-06e4-efb559464aa7</PLSQL_PARAMETER_ID>
+<ABSOLUTE_VALUE ifsrecord:datatype="Text" xsi:nil="1"/>
+<IS_ARRAY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<VALIDATION_OBJECT_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<PLSQL_PARAMETER ifsrecord:datatype="Aggregate">
+<PLSQL_PARAMETER ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<PARAMETER_ID ifsrecord:datatype="Alpha">7550affd-ceb9-11e2-06e4-efb559464aa7</PARAMETER_ID>
+<NAME ifsrecord:datatype="Alpha">DESCRIPTION_</NAME>
+<DATATYPE ifsrecord:datatype="Enum">VARCHAR2</DATATYPE>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+</PLSQL_PARAMETER>
+</PLSQL_PARAMETER>
+</METHOD_PARAMETER_DEFINITION>
+<METHOD_PARAMETER_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">97d6e211-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">part_no_</NAME>
+<ORDINAL ifsrecord:datatype="Integer">0</ORDINAL>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<VIEW_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<PLSQL_METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</PLSQL_METHOD_ID>
+<PLSQL_PARAMETER_ID ifsrecord:datatype="Alpha">7550affb-ceb9-11e2-06e4-efb559464aa7</PLSQL_PARAMETER_ID>
+<ABSOLUTE_VALUE ifsrecord:datatype="Text" xsi:nil="1"/>
+<IS_ARRAY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<VALIDATION_OBJECT_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<PLSQL_PARAMETER ifsrecord:datatype="Aggregate">
+<PLSQL_PARAMETER ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<PARAMETER_ID ifsrecord:datatype="Alpha">7550affb-ceb9-11e2-06e4-efb559464aa7</PARAMETER_ID>
+<NAME ifsrecord:datatype="Alpha">PART_NO_</NAME>
+<DATATYPE ifsrecord:datatype="Enum">VARCHAR2</DATATYPE>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<ORDINAL ifsrecord:datatype="Integer">0</ORDINAL>
+</PLSQL_PARAMETER>
+</PLSQL_PARAMETER>
+</METHOD_PARAMETER_DEFINITION>
+<METHOD_PARAMETER_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">97d6e211-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">unit_code_</NAME>
+<ORDINAL ifsrecord:datatype="Integer">2</ORDINAL>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<VIEW_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<PLSQL_METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</PLSQL_METHOD_ID>
+<PLSQL_PARAMETER_ID ifsrecord:datatype="Alpha">7550afff-ceb9-11e2-06e4-efb559464aa7</PLSQL_PARAMETER_ID>
+<ABSOLUTE_VALUE ifsrecord:datatype="Text" xsi:nil="1"/>
+<IS_ARRAY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<VALIDATION_OBJECT_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<PLSQL_PARAMETER ifsrecord:datatype="Aggregate">
+<PLSQL_PARAMETER ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<PARAMETER_ID ifsrecord:datatype="Alpha">7550afff-ceb9-11e2-06e4-efb559464aa7</PARAMETER_ID>
+<NAME ifsrecord:datatype="Alpha">UNIT_CODE_</NAME>
+<DATATYPE ifsrecord:datatype="Enum">VARCHAR2</DATATYPE>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<ORDINAL ifsrecord:datatype="Integer">2</ORDINAL>
+</PLSQL_PARAMETER>
+</PLSQL_PARAMETER>
+</METHOD_PARAMETER_DEFINITION>
+</METHOD_PARAMETERS>
+<PLSQL_METHOD ifsrecord:datatype="Aggregate">
+<PLSQL_METHOD_DESCRIPTION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">Create_Part_Catalog</NAME>
+<PLSQL_PACKAGE_ID ifsrecord:datatype="Alpha">7550aff4-ceb9-11e2-06e4-efb559464aa7</PLSQL_PACKAGE_ID>
+<RETURN_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<OWNER_PACKAGE ifsrecord:datatype="Aggregate">
+<PLSQL_PACKAGE_BASE ifsrecord:state="queried">
+<PLSQL_PACKAGE_ID ifsrecord:datatype="Alpha">7550aff4-ceb9-11e2-06e4-efb559464aa7</PLSQL_PACKAGE_ID>
+<PACKAGE_ID ifsrecord:datatype="Alpha">trnsho</PACKAGE_ID>
+<LOGICAL_UNIT_ID ifsrecord:datatype="Alpha">754e3ef1-ceb9-11e2-06e4-efb559464aa7</LOGICAL_UNIT_ID>
+<NAME ifsrecord:datatype="Alpha">C_PART_CATALOG_API</NAME>
+</PLSQL_PACKAGE_BASE>
+</OWNER_PACKAGE>
+</PLSQL_METHOD_DESCRIPTION>
+</PLSQL_METHOD>
+</HANDLER_METHOD_DEFINITION>
+</METHODS>
+</HANDLER_DEFINITION>
+<HANDLER_DEFINITION ifsrecord:state="queried">
+<HANDLER_ID ifsrecord:datatype="Alpha">95a614da-ceb8-11e2-06e4-efb559464aa7</HANDLER_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalogService</NAME>
+<TYPE ifsrecord:datatype="Enum">SERVICE_HANDLER</TYPE>
+<PARENT_PACKAGE ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PARENT_PACKAGE>
+<ACTIVITY_ID ifsrecord:datatype="Alpha">888b6fc1-ceb8-11e2-06e4-efb559464aa7</ACTIVITY_ID>
+<METHODS ifsrecord:datatype="Array">
+<HANDLER_METHOD_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">616c90c1-ceba-11e2-06e4-efb559464aa7</METHOD_ID>
+<HANDLER_ID ifsrecord:datatype="Alpha">95a614da-ceb8-11e2-06e4-efb559464aa7</HANDLER_ID>
+<IMPLEMENTATION ifsrecord:datatype="Enum" xsi:nil="1"/>
+<PLSQL_METHOD_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<RETURN_TYPE ifsrecord:datatype="Enum">VIEW</RETURN_TYPE>
+<RETURN_VIEW_ID ifsrecord:datatype="Alpha">2c69b421-ceba-11e2-06e4-efb559464aa7</RETURN_VIEW_ID>
+<ENTITY_OP_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<TRANSACTIONAL_BEHAVIOR ifsrecord:datatype="Enum">REQUIRES_NEW</TRANSACTIONAL_BEHAVIOR>
+<RETURNS_ARRAY ifsrecord:datatype="Boolean">1</RETURNS_ARRAY>
+<NAME ifsrecord:datatype="Alpha">CCreatePartCatalog</NAME>
+<RETURN_STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<BIZ_API_NAME ifsrecord:datatype="Alpha">C_CREATE_PART_CATALOG</BIZ_API_NAME>
+<BIZ_API_TYPE ifsrecord:datatype="Enum">INBOUND_REQUEST</BIZ_API_TYPE>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<PLSQL_BLOCK ifsrecord:datatype="Text" xsi:nil="1"/>
+<METHOD_PARAMETERS ifsrecord:datatype="Array">
+<METHOD_PARAMETER_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">616c90c1-ceba-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">PartCatalogRequest</NAME>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+<DATATYPE ifsrecord:datatype="Enum">VIEW</DATATYPE>
+<VIEW_ID ifsrecord:datatype="Alpha">aeb380c1-ceb8-11e2-06e4-efb559464aa7</VIEW_ID>
+<PLSQL_METHOD_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<PLSQL_PARAMETER_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ABSOLUTE_VALUE ifsrecord:datatype="Text" xsi:nil="1"/>
+<IS_ARRAY ifsrecord:datatype="Boolean">1</IS_ARRAY>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<VALIDATION_OBJECT_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<VIEW ifsrecord:datatype="Aggregate">
+<VIEW_DESCRIPTION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">aeb380c1-ceb8-11e2-06e4-efb559464aa7</VIEW_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalogRequest</NAME>
+<PARENT_PACKAGE ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PARENT_PACKAGE>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<MAIN_VIEW ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<VIEW_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+</VIEW_DESCRIPTION>
+</VIEW>
+</METHOD_PARAMETER_DEFINITION>
+</METHOD_PARAMETERS>
+<RETURN_VIEW ifsrecord:datatype="Aggregate">
+<VIEW_DESCRIPTION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">2c69b421-ceba-11e2-06e4-efb559464aa7</VIEW_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalogResponse</NAME>
+<PARENT_PACKAGE ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PARENT_PACKAGE>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<MAIN_VIEW ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<VIEW_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+</VIEW_DESCRIPTION>
+</RETURN_VIEW>
+</HANDLER_METHOD_DEFINITION>
+</METHODS>
+<ACTIVITY ifsrecord:datatype="Aggregate">
+<ACTIVITY_DESCRIPTION ifsrecord:state="queried">
+<ACTIVITY_ID ifsrecord:datatype="Alpha">888b6fc1-ceb8-11e2-06e4-efb559464aa7</ACTIVITY_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalogService</NAME>
+</ACTIVITY_DESCRIPTION>
+</ACTIVITY>
+</HANDLER_DEFINITION>
+</HANDLERS>
+<VIEWS ifsrecord:datatype="Array">
+<VIEW_DEFINITION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">aeb380c1-ceb8-11e2-06e4-efb559464aa7</VIEW_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalogRequest</NAME>
+<PARENT_PACKAGE ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PARENT_PACKAGE>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<MAIN_VIEW ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<BASED_ON ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<TERM_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<TERM_USAGE_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<SELECT_STMT ifsrecord:datatype="Text" xsi:nil="1"/>
+<VIEW_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<DISPLAY_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<PLSQL_PACKAGE ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DATABASE_VIEW ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<VIEW_ATTRIBUTES ifsrecord:datatype="Array">
+<VIEW_ATTRIBUTE_DEFINITION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">aeb380c1-ceb8-11e2-06e4-efb559464aa7</VIEW_ID>
+<ATTRIBUTE_ID ifsrecord:datatype="Alpha">c816d4e1-ceb8-11e2-06e4-efb559464aa7</ATTRIBUTE_ID>
+<NAME ifsrecord:datatype="Alpha">Description</NAME>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ENTITY_ATTRIBUTE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORDINAL ifsrecord:datatype="Integer">2</ORDINAL>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<LENGTH ifsrecord:datatype="Integer">200</LENGTH>
+<SCALE ifsrecord:datatype="Integer" xsi:nil="1"/>
+<PRECISION ifsrecord:datatype="Integer" xsi:nil="1"/>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<TERM_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<TERM_USAGE_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<DEFAULT_LOV ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<SQL_IMPLEMENTATION ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DISPLAY_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<IS_PRIMARY_KEY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+</VIEW_ATTRIBUTE_DEFINITION>
+<VIEW_ATTRIBUTE_DEFINITION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">aeb380c1-ceb8-11e2-06e4-efb559464aa7</VIEW_ID>
+<ATTRIBUTE_ID ifsrecord:datatype="Alpha">bbf69561-ceb8-11e2-06e4-efb559464aa7</ATTRIBUTE_ID>
+<NAME ifsrecord:datatype="Alpha">PartNo</NAME>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ENTITY_ATTRIBUTE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<LENGTH ifsrecord:datatype="Integer">25</LENGTH>
+<SCALE ifsrecord:datatype="Integer" xsi:nil="1"/>
+<PRECISION ifsrecord:datatype="Integer" xsi:nil="1"/>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<TERM_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<TERM_USAGE_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<DEFAULT_LOV ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<SQL_IMPLEMENTATION ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DISPLAY_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<IS_PRIMARY_KEY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+</VIEW_ATTRIBUTE_DEFINITION>
+<VIEW_ATTRIBUTE_DEFINITION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">aeb380c1-ceb8-11e2-06e4-efb559464aa7</VIEW_ID>
+<ATTRIBUTE_ID ifsrecord:datatype="Alpha">e5e8f4d1-ceb8-11e2-06e4-efb559464aa7</ATTRIBUTE_ID>
+<NAME ifsrecord:datatype="Alpha">UnitCode</NAME>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ENTITY_ATTRIBUTE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORDINAL ifsrecord:datatype="Integer">3</ORDINAL>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<LENGTH ifsrecord:datatype="Integer">30</LENGTH>
+<SCALE ifsrecord:datatype="Integer" xsi:nil="1"/>
+<PRECISION ifsrecord:datatype="Integer" xsi:nil="1"/>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<TERM_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<TERM_USAGE_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<DEFAULT_LOV ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<SQL_IMPLEMENTATION ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DISPLAY_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<IS_PRIMARY_KEY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+</VIEW_ATTRIBUTE_DEFINITION>
+</VIEW_ATTRIBUTES>
+</VIEW_DEFINITION>
+<VIEW_DEFINITION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">2c69b421-ceba-11e2-06e4-efb559464aa7</VIEW_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalogResponse</NAME>
+<PARENT_PACKAGE ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PARENT_PACKAGE>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<MAIN_VIEW ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<BASED_ON ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<TERM_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<TERM_USAGE_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<SELECT_STMT ifsrecord:datatype="Text" xsi:nil="1"/>
+<VIEW_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<DISPLAY_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<PLSQL_PACKAGE ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DATABASE_VIEW ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<VIEW_ATTRIBUTES ifsrecord:datatype="Array">
+<VIEW_ATTRIBUTE_DEFINITION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">2c69b421-ceba-11e2-06e4-efb559464aa7</VIEW_ID>
+<ATTRIBUTE_ID ifsrecord:datatype="Alpha">33fc0711-ceba-11e2-06e4-efb559464aa7</ATTRIBUTE_ID>
+<NAME ifsrecord:datatype="Alpha">PartNo</NAME>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ENTITY_ATTRIBUTE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<LENGTH ifsrecord:datatype="Integer">25</LENGTH>
+<SCALE ifsrecord:datatype="Integer" xsi:nil="1"/>
+<PRECISION ifsrecord:datatype="Integer" xsi:nil="1"/>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<TERM_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<TERM_USAGE_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<DEFAULT_LOV ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<SQL_IMPLEMENTATION ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DISPLAY_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<IS_PRIMARY_KEY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+</VIEW_ATTRIBUTE_DEFINITION>
+<VIEW_ATTRIBUTE_DEFINITION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">2c69b421-ceba-11e2-06e4-efb559464aa7</VIEW_ID>
+<ATTRIBUTE_ID ifsrecord:datatype="Alpha">4b4e0761-ceba-11e2-06e4-efb559464aa7</ATTRIBUTE_ID>
+<NAME ifsrecord:datatype="Alpha">ReturnMessage</NAME>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ENTITY_ATTRIBUTE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORDINAL ifsrecord:datatype="Integer">3</ORDINAL>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<LENGTH ifsrecord:datatype="Integer">2000</LENGTH>
+<SCALE ifsrecord:datatype="Integer" xsi:nil="1"/>
+<PRECISION ifsrecord:datatype="Integer" xsi:nil="1"/>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<TERM_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<TERM_USAGE_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<DEFAULT_LOV ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<SQL_IMPLEMENTATION ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DISPLAY_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<IS_PRIMARY_KEY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+</VIEW_ATTRIBUTE_DEFINITION>
+<VIEW_ATTRIBUTE_DEFINITION ifsrecord:state="queried">
+<VIEW_ID ifsrecord:datatype="Alpha">2c69b421-ceba-11e2-06e4-efb559464aa7</VIEW_ID>
+<ATTRIBUTE_ID ifsrecord:datatype="Alpha">3fa764b1-ceba-11e2-06e4-efb559464aa7</ATTRIBUTE_ID>
+<NAME ifsrecord:datatype="Alpha">StatusCode</NAME>
+<ENTITY_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ENTITY_ATTRIBUTE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORDINAL ifsrecord:datatype="Integer">2</ORDINAL>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<DATATYPE ifsrecord:datatype="Enum">TEXT</DATATYPE>
+<LENGTH ifsrecord:datatype="Integer">20</LENGTH>
+<SCALE ifsrecord:datatype="Integer" xsi:nil="1"/>
+<PRECISION ifsrecord:datatype="Integer" xsi:nil="1"/>
+<STEREOTYPE_NAME ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<TERM_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<TERM_USAGE_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<DEFAULT_LOV ifsrecord:datatype="Boolean" xsi:nil="1"/>
+<SQL_IMPLEMENTATION ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<DISPLAY_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<IS_PRIMARY_KEY ifsrecord:datatype="Boolean" xsi:nil="1"/>
+</VIEW_ATTRIBUTE_DEFINITION>
+</VIEW_ATTRIBUTES>
+</VIEW_DEFINITION>
+</VIEWS>
+<DIAGRAMS ifsrecord:datatype="Array">
+<PACKAGE_DIAGRAM ifsrecord:state="queried">
+<PACKAGE_ID ifsrecord:datatype="Alpha">95a614d1-ceb8-11e2-06e4-efb559464aa7</PACKAGE_ID>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+<NAME ifsrecord:datatype="Text">Main</NAME>
+<DATA ifsrecord:datatype="Binary">GxhESUFHUkFNX0xBWU9VVBsYREFUQRdESUFHUkFNUy5ESUFHUkFNX0xBWU9VVBZDcmVhdGUbGERJ
+QUdSQU1fSUQXVBYqEBVNYWluGE5PREVTF0FSUkFZFiobGERBVEEXRElBR1JBTVMuTk9ERV9MQVlP
+VVQWQ3JlYXRlGxhHVUlEF1QWKhAVOTdlNDkzMjItY2ViOC0xMWUyLTA2ZTQtZWZiNTU5NDY0YWE3
+GE9CSkVDVF9JRBdUFioQFTk1YTYxNGRhLWNlYjgtMTFlMi0wNmU0LWVmYjU1OTQ2NGFhNxhOT0RF
+X1RZUEUXVBYqEBVpZnMuZm5kLm5iLnZpZXcuZGlhZ3JhbXMuUGtnSGFuZGxlck5vZGUYUEFSRU5U
+X0lEF1QWKhAVOTVhNjE0ZDEtY2ViOC0xMWUyLTA2ZTQtZWZiNTU5NDY0YWE3GERPQxdUFioQFRhY
+F0kWKhAVMzQYWRdJFioQFTM4GFdJRFRIF0kWKhAVMTcyGEhFSUdIVBdJFioQFTQ0GEZPTlRfU0la
+RRdJFioQFTAYU0hPV19FTEVNRU5UUxdCFioQFVRSVUUYQk9PTEVBTl9WQUxVRTEXQhYqEBVUUlVF
+GhoaGho=
+</DATA>
+</PACKAGE_DIAGRAM>
+</DIAGRAMS>
+</SERVER_PACKAGE_DEFINITION>

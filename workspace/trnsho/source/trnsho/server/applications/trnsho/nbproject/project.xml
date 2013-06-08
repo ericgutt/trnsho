@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ant.freeform</type>
+    <configuration>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
+            <!--Do not use Project Properties customizer for this file.-->
+            <name>Application: trnsho</name>
+            <properties>
+                <property name="dev.root">../../../../../..</property>
+                <property name="root">../../../../../../..</property>
+                <property name="dist.dir">${root}/server/dist</property>
+                <property name="javaruntime.dir">${root}/server/javaruntime</property>
+                <property name="classes.packages">${root}/server/classes/packages</property>
+                <property name="classes.enumerations">${root}/server/classes/enumerations</property>
+                <property name="trnsho.packages">${dev.root}/trnsho/source/trnsho/server/packages</property>
+                <property name="trnsho.enumerations">${dev.root}/trnsho/source/trnsho/server/enumerations</property>
+                <property name="trnsho.lib">${dev.root}/trnsho/source/trnsho/server/lib</property>
+            </properties>
+            <folders>
+                <source-folder>
+                    <label>Root</label>
+                    <location>.</location>
+                </source-folder>
+                 <source-folder>
+                     <label>trnsho-enumerations</label>
+                     <location>${trnsho.enumerations}</location>
+                 </source-folder>
+                 <source-folder>
+                     <label>CPartCatalogServiceGroup</label>
+                     <location>${trnsho.packages}/cpartcatalogservicegroup</location>
+                 </source-folder>
+                 <source-folder>
+                     <label>CShopOrderServicesGroup</label>
+                     <location>${trnsho.packages}/cshoporderservicesgroup</location>
+                 </source-folder>
+            </folders>
+            <ide-actions>
+                <action name="build">
+                    <target>all</target>
+                </action>
+                <action name="rebuild">
+                    <target>clean</target>
+                    <target>all</target>
+                </action>
+                <action name="clean">
+                    <target>clean</target>
+                </action>
+                <action name="run">
+                    <target>all</target>
+                </action>
+            </ide-actions>
+            <view>
+                <items>
+                    <source-file>
+                        <location>build.xml</location>
+                    </source-file>
+                    <source-folder style="packages">
+                        <label>trnsho-enumerations</label>
+                        <location>${trnsho.enumerations}</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>CPartCatalogServiceGroup</label>
+                        <location>${trnsho.packages}/cpartcatalogservicegroup</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>CShopOrderServicesGroup</label>
+                        <location>${trnsho.packages}/cshoporderservicesgroup</location>
+                    </source-folder>
+                </items>
+                <context-menu>
+                    <ide-action name="build"/>
+                    <ide-action name="rebuild"/>
+                    <ide-action name="clean"/>
+                    <ide-action name="run"/>
+                    <separator/>
+                    <action>
+                        <label>Refresh Package List</label>
+                        <target>refresh-package-list</target>
+                    </action>
+                    <action>
+                        <label>Update fndext.ear</label>
+                        <target>update-fndext</target>
+                    </action>
+                </context-menu>
+            </view>
+            <subprojects/>
+        </general-data>
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/1">
+            <compilation-unit>
+                <package-root>${trnsho.enumerations}</package-root>
+                <package-root>${trnsho.packages}/cpartcatalogservicegroup</package-root>
+                <package-root>${trnsho.packages}/cshoporderservicesgroup</package-root>
+                <classpath mode="compile">${javaruntime.dir}/ifs-fnd-j2ee.jar;${javaruntime.dir}/ifs-fnd-common.jar;${javaruntime.dir}/fndmob.jar;${javaruntime.dir}/jboss-j2ee.jar;${dist.dir}/cpartcatalogservicegroup-ejb.jar;${dist.dir}/cshoporderservicesgroup-ejb.jar</classpath>
+                <source-level>1.4</source-level>
+            </compilation-unit>
+        </java-data>
+    </configuration>
+</project>

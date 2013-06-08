@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LOGICAL_UNIT_DEFINITION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifsrecord="urn:ifsworld-com:ifsrecord" xmlns="urn:ifsworld-com:schemas:repositoryadministration_logical_unit_definition" ifsrecord:state="queried">
+<LOGICAL_UNIT_ID ifsrecord:datatype="Alpha">754e3ef1-ceb9-11e2-06e4-efb559464aa7</LOGICAL_UNIT_ID>
+<NAME ifsrecord:datatype="Alpha">CPartCatalog</NAME>
+<PACKAGE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<MAIN_VIEW_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<MAIN_PLSQL_PACKAGE_ID ifsrecord:datatype="Alpha">7550aff4-ceb9-11e2-06e4-efb559464aa7</MAIN_PLSQL_PACKAGE_ID>
+<TYPE ifsrecord:datatype="Enum">NORMAL_LU</TYPE>
+<MAP_TO_ENUMERATION ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<LOCKED_BY ifsrecord:datatype="Text" xsi:nil="1"/>
+<LU_PACKAGES ifsrecord:datatype="Array">
+<PLSQL_PACKAGE_DEFINITION ifsrecord:state="queried">
+<PLSQL_PACKAGE_ID ifsrecord:datatype="Alpha">7550aff4-ceb9-11e2-06e4-efb559464aa7</PLSQL_PACKAGE_ID>
+<PACKAGE_ID ifsrecord:datatype="Alpha">trnsho</PACKAGE_ID>
+<LOGICAL_UNIT_ID ifsrecord:datatype="Alpha">754e3ef1-ceb9-11e2-06e4-efb559464aa7</LOGICAL_UNIT_ID>
+<NAME ifsrecord:datatype="Alpha">C_PART_CATALOG_API</NAME>
+<METHODS ifsrecord:datatype="Array">
+<PLSQL_METHOD_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">Create_Part_Catalog</NAME>
+<PLSQL_PACKAGE_ID ifsrecord:datatype="Alpha">7550aff4-ceb9-11e2-06e4-efb559464aa7</PLSQL_PACKAGE_ID>
+<RETURN_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<PLSQL_BLOCK ifsrecord:datatype="Text" xsi:nil="1"/>
+<STORAGE_PACKAGE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORIGINAL_NAME ifsrecord:datatype="Text">Create_Part_Catalog</ORIGINAL_NAME>
+<PARAMETERS ifsrecord:datatype="Array">
+<PLSQL_PARAMETER ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<PARAMETER_ID ifsrecord:datatype="Alpha">7550affd-ceb9-11e2-06e4-efb559464aa7</PARAMETER_ID>
+<NAME ifsrecord:datatype="Alpha">DESCRIPTION_</NAME>
+<DATATYPE ifsrecord:datatype="Enum">VARCHAR2</DATATYPE>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+</PLSQL_PARAMETER>
+<PLSQL_PARAMETER ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<PARAMETER_ID ifsrecord:datatype="Alpha">7550affb-ceb9-11e2-06e4-efb559464aa7</PARAMETER_ID>
+<NAME ifsrecord:datatype="Alpha">PART_NO_</NAME>
+<DATATYPE ifsrecord:datatype="Enum">VARCHAR2</DATATYPE>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<ORDINAL ifsrecord:datatype="Integer">0</ORDINAL>
+</PLSQL_PARAMETER>
+<PLSQL_PARAMETER ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550aff8-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<PARAMETER_ID ifsrecord:datatype="Alpha">7550afff-ceb9-11e2-06e4-efb559464aa7</PARAMETER_ID>
+<NAME ifsrecord:datatype="Alpha">UNIT_CODE_</NAME>
+<DATATYPE ifsrecord:datatype="Enum">VARCHAR2</DATATYPE>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<ORDINAL ifsrecord:datatype="Integer">2</ORDINAL>
+</PLSQL_PARAMETER>
+</PARAMETERS>
+</PLSQL_METHOD_DEFINITION>
+<PLSQL_METHOD_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550b001-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">Delete_Part_Catalog</NAME>
+<PLSQL_PACKAGE_ID ifsrecord:datatype="Alpha">7550aff4-ceb9-11e2-06e4-efb559464aa7</PLSQL_PACKAGE_ID>
+<RETURN_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<PLSQL_BLOCK ifsrecord:datatype="Text" xsi:nil="1"/>
+<STORAGE_PACKAGE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORIGINAL_NAME ifsrecord:datatype="Text">Delete_Part_Catalog</ORIGINAL_NAME>
+<PARAMETERS ifsrecord:datatype="Array">
+<PLSQL_PARAMETER ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7550b001-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<PARAMETER_ID ifsrecord:datatype="Alpha">7552f9e1-ceb9-11e2-06e4-efb559464aa7</PARAMETER_ID>
+<NAME ifsrecord:datatype="Alpha">PART_NO_</NAME>
+<DATATYPE ifsrecord:datatype="Enum">VARCHAR2</DATATYPE>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<ORDINAL ifsrecord:datatype="Integer">0</ORDINAL>
+</PLSQL_PARAMETER>
+</PARAMETERS>
+</PLSQL_METHOD_DEFINITION>
+<PLSQL_METHOD_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7552f9ea-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">Init</NAME>
+<PLSQL_PACKAGE_ID ifsrecord:datatype="Alpha">7550aff4-ceb9-11e2-06e4-efb559464aa7</PLSQL_PACKAGE_ID>
+<RETURN_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<PLSQL_BLOCK ifsrecord:datatype="Text" xsi:nil="1"/>
+<STORAGE_PACKAGE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORIGINAL_NAME ifsrecord:datatype="Text">Init</ORIGINAL_NAME>
+</PLSQL_METHOD_DEFINITION>
+<PLSQL_METHOD_DEFINITION ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7552f9e3-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<NAME ifsrecord:datatype="Alpha">Update_Part_Catalog</NAME>
+<PLSQL_PACKAGE_ID ifsrecord:datatype="Alpha">7550aff4-ceb9-11e2-06e4-efb559464aa7</PLSQL_PACKAGE_ID>
+<RETURN_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+<PLSQL_BLOCK ifsrecord:datatype="Text" xsi:nil="1"/>
+<STORAGE_PACKAGE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORIGINAL_NAME ifsrecord:datatype="Text">Update_Part_Catalog</ORIGINAL_NAME>
+<PARAMETERS ifsrecord:datatype="Array">
+<PLSQL_PARAMETER ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7552f9e3-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<PARAMETER_ID ifsrecord:datatype="Alpha">7552f9e8-ceb9-11e2-06e4-efb559464aa7</PARAMETER_ID>
+<NAME ifsrecord:datatype="Alpha">DESCRIPTION_</NAME>
+<DATATYPE ifsrecord:datatype="Enum">VARCHAR2</DATATYPE>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<ORDINAL ifsrecord:datatype="Integer">1</ORDINAL>
+</PLSQL_PARAMETER>
+<PLSQL_PARAMETER ifsrecord:state="queried">
+<METHOD_ID ifsrecord:datatype="Alpha">7552f9e3-ceb9-11e2-06e4-efb559464aa7</METHOD_ID>
+<PARAMETER_ID ifsrecord:datatype="Alpha">7552f9e6-ceb9-11e2-06e4-efb559464aa7</PARAMETER_ID>
+<NAME ifsrecord:datatype="Alpha">PART_NO_</NAME>
+<DATATYPE ifsrecord:datatype="Enum">VARCHAR2</DATATYPE>
+<DIRECTION ifsrecord:datatype="Enum">IN</DIRECTION>
+<ORDINAL ifsrecord:datatype="Integer">0</ORDINAL>
+</PLSQL_PARAMETER>
+</PARAMETERS>
+</PLSQL_METHOD_DEFINITION>
+</METHODS>
+</PLSQL_PACKAGE_DEFINITION>
+</LU_PACKAGES>
+<MAIN_PLSQL_PACKAGE ifsrecord:datatype="Aggregate">
+<PLSQL_PACKAGE_DESCRIPTION ifsrecord:state="queried">
+<PLSQL_PACKAGE_ID ifsrecord:datatype="Alpha">7550aff4-ceb9-11e2-06e4-efb559464aa7</PLSQL_PACKAGE_ID>
+<PACKAGE_ID ifsrecord:datatype="Alpha">trnsho</PACKAGE_ID>
+<LOGICAL_UNIT_ID ifsrecord:datatype="Alpha">754e3ef1-ceb9-11e2-06e4-efb559464aa7</LOGICAL_UNIT_ID>
+<NAME ifsrecord:datatype="Alpha">C_PART_CATALOG_API</NAME>
+</PLSQL_PACKAGE_DESCRIPTION>
+</MAIN_PLSQL_PACKAGE>
+</LOGICAL_UNIT_DEFINITION>

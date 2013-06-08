@@ -1,0 +1,19 @@
+<bean>
+  <name>CPartCatalogServiceGroup</name>
+  <class_name>ifs.application.cpartcatalogservicegroup.CPartCatalogServiceGroupHome</class_name>
+  <handlers>
+    <handler>
+      <name>CPartCatalogPlsqlAPI</name>
+    </handler>
+    <handler>
+      <name>CPartCatalogService</name>
+      <operations>
+        <operation>
+          <name>CCreatePartCatalog</name>
+          <biz_api_name>C_CREATE_PART_CATALOG</biz_api_name>
+          <biz_api_type>INBOUND_REQUEST</biz_api_type>
+        </operation>
+      </operations>
+    </handler>
+  </handlers>
+</bean>

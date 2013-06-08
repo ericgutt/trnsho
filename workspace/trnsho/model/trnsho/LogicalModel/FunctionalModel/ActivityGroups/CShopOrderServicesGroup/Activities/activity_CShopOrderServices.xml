@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ACTIVITY_DEFINITION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifsrecord="urn:ifsworld-com:ifsrecord" xmlns="urn:ifsworld-com:schemas:repositoryadministration_activity_definition" ifsrecord:state="queried">
+<ACTIVITY_ID ifsrecord:datatype="Alpha">1f579051-cd56-11e2-2de1-d80656a3aac5</ACTIVITY_ID>
+<NAME ifsrecord:datatype="Alpha">CShopOrderServices</NAME>
+<DEFINITION ifsrecord:datatype="Text" xsi:nil="1"/>
+<REMARKS ifsrecord:datatype="Text" xsi:nil="1"/>
+<PACKAGE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<TYPE ifsrecord:datatype="Enum">OTHER</TYPE>
+<TERM_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<TERM_USAGE_ID ifsrecord:datatype="Text" xsi:nil="1"/>
+<LOCKED_BY ifsrecord:datatype="Text" xsi:nil="1"/>
+<IS_SERVICE ifsrecord:datatype="Boolean">1</IS_SERVICE>
+<SERVICE_LEVEL ifsrecord:datatype="Enum">UNSUPPORTED</SERVICE_LEVEL>
+<DISPLAY_TYPE ifsrecord:datatype="Enum" xsi:nil="1"/>
+</ACTIVITY_DEFINITION>

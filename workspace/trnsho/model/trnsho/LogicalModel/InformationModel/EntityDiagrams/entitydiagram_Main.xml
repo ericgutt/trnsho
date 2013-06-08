@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENTITY_PACKAGE_DIAGRAM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifsrecord="urn:ifsworld-com:ifsrecord" xmlns="urn:ifsworld-com:schemas:entitypackage_entity_package_diagram" ifsrecord:state="queried">
+<PACKAGE_ID ifsrecord:datatype="Alpha" xsi:nil="1"/>
+<ORDINAL ifsrecord:datatype="Alpha">93a76a54-cd26-11e2-2de1-d80656a3aac5</ORDINAL>
+<NAME ifsrecord:datatype="Text">Main</NAME>
+<DATA ifsrecord:datatype="Binary" xsi:nil="1"/>
+<LOCKED_BY ifsrecord:datatype="Text" xsi:nil="1"/>
+</ENTITY_PACKAGE_DIAGRAM>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<project name="IFSPartCatalogResponseToFlat" default="default" basedir=".">
+    <description>Builds, tests, and runs the project IFSPartCatalogResponseToFlat.</description>
+    <import file="nbproject/build-impl.xml"/>
+    
+    <property name="transformer.class" value="JavaTransformer"/>
+    <target name="-post-jar">
+        <jar jarfile="${dist.jar}">
+            <fileset dir="${build.dir}/classes" includes="*.class" excludes="Main.class"/>
+            <!--fileset dir="D:/Work/lib" includes="lib-1.jar"/-->
+            <!--fileset dir="D:/Work/lib" includes="lib-2.jar"/-->
+            <manifest>
+                <attribute name="Transformer-class" value="${transformer.class}"/>
+            </manifest>
+        </jar>
+    </target>
+</project>

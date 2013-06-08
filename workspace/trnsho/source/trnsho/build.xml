@@ -1,0 +1,15 @@
+<project name="trnsho" default="all" basedir=".">
+
+<property name="component"      	value="trnsho"/>
+
+  <property name="development"         value="TRUE"/>
+
+  <property name="dev.root"            value="../../"/>
+  <property name="modules.root"        location="${dev.root}../"/>
+
+  <condition property="fndbaspath" value="fndbas/source/fndbas"><equals arg1="${development}" arg2="TRUE"/></condition>
+  <condition property="fndbaspath" value="fndbas"><equals arg1="${development}" arg2="FALSE"/></condition>
+
+  <import file="${modules.root}/${fndbaspath}/build-comp-template.xml"/>
+
+</project>

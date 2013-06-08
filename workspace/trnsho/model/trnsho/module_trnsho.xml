@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MODULE_DEFINITION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifsrecord="urn:ifsworld-com:ifsrecord" xmlns="urn:ifsworld-com:schemas:repositoryadministration_module_definition" ifsrecord:state="queried">
+<MODULE_ID ifsrecord:datatype="Alpha">trnsho</MODULE_ID>
+<DISPLAY_NAME ifsrecord:datatype="Text">IFS Training Shop Order Interface</DISPLAY_NAME>
+<DIAGRAMS ifsrecord:datatype="Array">
+<MODULE_DIAGRAM ifsrecord:state="queried">
+<MODULE_ID ifsrecord:datatype="Alpha">trnsho</MODULE_ID>
+<ORDINAL ifsrecord:datatype="Integer">0</ORDINAL>
+<NAME ifsrecord:datatype="Text">Main</NAME>
+<DATA ifsrecord:datatype="Binary">GxhESUFHUkFNX0xBWU9VVBsYREFUQRdESUFHUkFNUy5ESUFHUkFNX0xBWU9VVBZDcmVhdGUbGERJ
+QUdSQU1fSUQXVBYqEBVNYWluGE5PREVTF0FSUkFZFiobGERBVEEXRElBR1JBTVMuTk9ERV9MQVlP
+VVQWQ3JlYXRlGxhHVUlEF1QWKhAVOTNjNjhiMTEtY2QyNi0xMWUyLTJkZTEtZDgwNjU2YTNhYWM1
+GE9CSkVDVF9JRBdUFioQFXRybnNobxhOT0RFX1RZUEUXVBYqEBVpZnMuZm5kLm5iLnZpZXcuZGlh
+Z3JhbXMuTW9kdWxlRGVmaW5pdGlvbk5vZGUYRE9DF1QWKhAVGFgXSRYqEBUxMBhZF0kWKhAVMTAY
+V0lEVEgXSRYqEBU4MBhIRUlHSFQXSRYqEBU2MRhGT05UX1NJWkUXSRYqEBUwGhoaGho=
+</DATA>
+</MODULE_DIAGRAM>
+</DIAGRAMS>
+</MODULE_DEFINITION>

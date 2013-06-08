@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-ejb-jar xmlns="http://www.bea.com/ns/weblogic/weblogic-ejb-jar/1.0/weblogic-ejb-jar.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bea.com/ns/weblogic/weblogic-ejb-jar/1.0/weblogic-ejb-jar.xsd">
+   <weblogic-enterprise-bean>
+      <ejb-name>CPartCatalogServiceGroup</ejb-name>
+      <resource-description>
+         <res-ref-name>jdbc/fndbas</res-ref-name>
+         <jndi-name>jdbc/fndbas</jndi-name>
+      </resource-description>
+      <resource-description>
+         <res-ref-name>jdbc/fndbas-noxa</res-ref-name>
+         <jndi-name>jdbc/fndbas-noxa</jndi-name>
+      </resource-description>
+      <enable-call-by-reference>true</enable-call-by-reference>
+      <jndi-name>ejb/ifs/_appname_/CPartCatalogServiceGroup</jndi-name>
+   </weblogic-enterprise-bean>
+   <security-role-assignment>
+      <role-name>IFSUser</role-name>
+      <principal-name>IFSUser</principal-name>
+   </security-role-assignment>
+   <security-role-assignment>
+      <role-name>IFSTrustedExternalModule</role-name>
+      <principal-name>IFSTrustedExternalModule</principal-name>
+   </security-role-assignment>
+</weblogic-ejb-jar>

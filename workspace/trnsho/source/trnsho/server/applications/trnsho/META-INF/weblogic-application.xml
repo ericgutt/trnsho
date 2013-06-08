@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-application xmlns="http://xmlns.oracle.com/weblogic/weblogic-application" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-application http://xmlns.oracle.com/weblogic/weblogic-application/1.0/weblogic-application.xsd">
+   <security>
+      <security-role-assignment>
+         <role-name>IFSUser</role-name>
+         <principal-name>IFSUser</principal-name>
+      </security-role-assignment>
+      <security-role-assignment>
+         <role-name>IFSTrustedExternalModule</role-name>
+         <principal-name>IFSTrustedExternalModule</principal-name>
+      </security-role-assignment>
+   </security>
+</weblogic-application>

@@ -1,0 +1,117 @@
+<project name="Build CShopOrderServicesGroup package (Local)" default="all" basedir=".">
+  <!-- Script to build a server package -->
+
+  <!--
+     ==================================
+           Initialize Dependencies     
+     ==================================
+  -->
+
+  <!-- Required modules -->
+  <condition property="trnshopath" value="trnsho/source/trnsho"><equals arg1="${development}" arg2="TRUE"/></condition>
+  <condition property="trnshopath" value="trnsho"><equals arg1="${development}" arg2="FALSE"/></condition>
+
+  <!-- Source availability -->
+  <property name="src.CShopOrderServicesGroup" value="${modules.root}/${trnshopath}/server/packages/CShopOrderServicesGroup"/>
+  <available file="${src.CShopOrderServicesGroup}/build.xml" type="file" property="src.CShopOrderServicesGroup.present"/>
+
+  <!-- Source path and Jar file -->
+  <fileset id="CShopOrderServicesGroupJar" dir="${ws.dist}" includes="cshoporderservicesgroup-ejb.jar"/>
+  <fileset id="CShopOrderServicesGroupUpdatedJar" dir="${dist.temp.app}" includes="cshoporderservicesgroup-ejb.jar"/>
+  <fileset id="CShopOrderServicesGroupMappingsXml" dir="${dist.mappings}" includes="CShopOrderServicesGroup-mappings.xml"/>
+  <path id="CShopOrderServicesGroupSource" path="${src.CShopOrderServicesGroup}"/>
+
+  <!-- Import Required packages -->
+
+  <!-- Import Required enumerations-->
+  <IfsImport Description="trnsho Enumerations">
+    <FileSet file="${modules.root}/${trnshopath}/server/enumerations/build.xml"/>
+    <FileSet file="${ws.dist}/ant/build-trnsho-enumerations.xml"/>
+    <FileSet file="${modules.root}/${optionalpath}/trnsho/server/enumerations/build.xml"/>
+  </IfsImport>
+
+
+  <!-- Required library packages -->
+
+  <!-- Update parent properties -->
+  <script language="javascript"> <![CDATA[
+      if(project.getProperty("copy.required.project.files")==null){
+        if(project.getProperty("src.CShopOrderServicesGroup.present")!=null){
+          sources.append(CShopOrderServicesGroupSource);
+          packJars.addTask(JarCShopOrderServicesGroup);
+          copyFilesToDist.addTask(copyCShopOrderServicesGroupMappingsXml);
+          copyFilesToDist.addTask(copyCShopOrderServicesGroupBuild);
+        } 
+        else {
+          classpath.addFileset(CShopOrderServicesGroupJar);
+        }
+        packModule.addFileset(CShopOrderServicesGroupUpdatedJar);
+        updateJar.addTask(updateCShopOrderServicesGroupJar);
+
+      }
+  ]]></script>
+
+
+
+  <!--
+     ==================================
+                package tasks          
+     ==================================
+  -->
+
+  <target name="CShopOrderServicesGroup-tasks">
+    <jar id="JarCShopOrderServicesGroup" jarfile="${ws.dist}/cshoporderservicesgroup-ejb.jar" manifest="${src.CShopOrderServicesGroup}/manifest_cc.mf">
+      <fileset dir="${ws.build}" includes="ifs/application/cshoporderservicesgroup/**"/>
+      <fileset dir="${src.CShopOrderServicesGroup}" includes="META-INF/*.xml"/>
+    </jar>
+
+    <copy id="copyCShopOrderServicesGroupMappingsXml" file="${src.CShopOrderServicesGroup}/mappings.xml" tofile="${dist.mappings}/CShopOrderServicesGroup-mappings.xml" failonerror="true" overwrite="true"/>
+
+    <copy id="copyCShopOrderServicesGroupBuild" file="${src.CShopOrderServicesGroup}/build.xml" tofile="${ws.dist}/ant/build-CShopOrderServicesGroup.xml" failonerror="true" overwrite="true"/>
+
+    <!-- Copy required library package jars -->
+
+    <!-- Update ejb Jar-->
+    <sequential id="updateCShopOrderServicesGroupJar">
+      <delete dir="${dist.temp.app}/CShopOrderServicesGroup" quiet="true"/>
+      <mkdir dir="${dist.temp.app}/CShopOrderServicesGroup/src"/>
+      <copy file="${ws.dist}/cshoporderservicesgroup-ejb.jar" todir="${dist.temp.app}"/>
+      <unzip src="${dist.temp.app}/cshoporderservicesgroup-ejb.jar" dest="${dist.temp.app}/CShopOrderServicesGroup/src"/>
+      <replace dir="${dist.temp.app}/CShopOrderServicesGroup/src/META-INF" token="_appname_" value="${ws.name}"/>
+      <updatedescriptors languages="${ifs.languages}" appowner="${ifs.appowner}" sslsupport="${ifs.enable-ssl-support}">
+          <fileset dir="${dist.temp.app}/CShopOrderServicesGroup/src/META-INF" includes="*.xml"/>
+      </updatedescriptors>
+      <jar jarfile="${dist.temp.app}/cshoporderservicesgroup-ejb.jar" manifest="${dist.temp.app}/CShopOrderServicesGroup/src/META-INF/MANIFEST.MF" update="yes" >
+          <fileset dir="${dist.temp.app}/CShopOrderServicesGroup/src" includes="**"/>
+      </jar>
+      <delete dir="${dist.temp.app}/CShopOrderServicesGroup" quiet="true"/>
+
+    </sequential>
+
+  </target>
+
+
+
+  <!--
+     ==========================================
+       Copy required files from project disk  
+     ==========================================
+  -->
+
+
+  <!--  Copy CShopOrderServicesGroup files -->
+  <target name="copy-CShopOrderServicesGroup-project-files" depends="copy-trnsho-enum-build-files">
+    <echo message="*** Copy CShopOrderServicesGroup files from the project disk. (Project root: ${project.modules.root}) ***"/>
+    <copy file="${project.dist}/cshoporderservicesgroup-ejb.jar" todir="${ws.dist}" failonerror="false" overwrite="true"/>
+    <copy file="${project.dist.mappings}/CShopOrderServicesGroup-mappings.xml" todir="${dist.mappings}" failonerror="false" overwrite="true"/>
+  </target>
+
+  <target name="copy-trnsho-enum-build-files">
+    <copy file="${modules.root}/${optionalpath}/trnsho/server/enumerations/build.xml" tofile="${ws.dist}/ant/temp/build-trnsho-enumerations.xml" failonerror="false" overwrite="true"/>
+    <copy file="${project.dist}/ant/build-trnsho-enumerations.xml" tofile="${ws.dist}/ant/temp/build-trnsho-enumerations.xml" failonerror="false" overwrite="true"/>
+    <copy file="${modules.root}/${trnshopath}/server/enumerations/build.xml" tofile="${ws.dist}/ant/temp/build-trnsho-enumerations.xml" failonerror="false" overwrite="true"/>
+    <ant antfile="${ws.dist}/ant/temp/build-trnsho-enumerations.xml"    target="copy-trnsho-enum-files" inheritall="true"/>
+  </target>
+
+
+</project>

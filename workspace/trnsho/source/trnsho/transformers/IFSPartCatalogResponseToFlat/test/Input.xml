@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <C_PART_CATALOG_RESPONSE_LIST>
+            <C_PART_CATALOG_RESPONSE>
+                <PART_NO>SR-PART500</PART_NO>
+                <STATUS_CODE>OK</STATUS_CODE>
+                <RETURN_MESSAGE>Created without errors</RETURN_MESSAGE>
+            </C_PART_CATALOG_RESPONSE>
+            <C_PART_CATALOG_RESPONSE>
+                <PART_NO>SR-PART501</PART_NO>
+                <STATUS_CODE>ERROR</STATUS_CODE>
+                <RETURN_MESSAGE>The Iso Unit object does not exist.</RETURN_MESSAGE>
+            </C_PART_CATALOG_RESPONSE>
+            <C_PART_CATALOG_RESPONSE>
+                <PART_NO>SR-PART502</PART_NO>
+                <STATUS_CODE>OK</STATUS_CODE>
+                <RETURN_MESSAGE>Created without errors</RETURN_MESSAGE>
+            </C_PART_CATALOG_RESPONSE>
+        </C_PART_CATALOG_RESPONSE_LIST>
+
+
