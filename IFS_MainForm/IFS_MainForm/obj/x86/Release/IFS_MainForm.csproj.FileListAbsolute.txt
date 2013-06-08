@@ -1,0 +1,6 @@
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\IFS_MainForm\IFS_MainForm\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\IFS_MainForm\IFS_MainForm\bin\Release\IFS_MainForm.dll.config
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\IFS_MainForm\IFS_MainForm\bin\Release\IFS_MainForm.dll
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\IFS_MainForm\IFS_MainForm\bin\Release\IFS_MainForm.pdb
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\IFS_MainForm\IFS_MainForm\obj\x86\Release\IFS_MainForm.dll
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\IFS_MainForm\IFS_MainForm\obj\x86\Release\IFS_MainForm.pdb
